@@ -1,0 +1,18 @@
+package com.mouldycheerio.discord.bot.commands;
+
+import com.mouldycheerio.discord.bot.MyBot;
+
+import sx.blah.discord.api.IDiscordClient;
+import sx.blah.discord.handle.obj.IMessage;
+
+public class HeyCommand extends BotCommand {
+    public aboutCommand() {
+        setName("about");
+        setDescription(new CommandDescription("Says some info about the bot.));
+    }
+
+    public void onCommand(MyBot orangepeel, IDiscordClient client, IMessage commandMessage, String[] args) {
+        commandMessage.getChannel().sendMessage("Hello! My name is Adii-Bot! I am a bot created by Adii#8807 and davidovski#8648. Contact one of them for more info!");
+
+    }
+}
