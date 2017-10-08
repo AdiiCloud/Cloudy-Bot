@@ -33,7 +33,7 @@ public class CommandController {
         commands.add(new SetChatChannelCommand());
         commands.add(new SetPlayingTextCommand());
         commands.add(new HelpCommand(commands));
-
+        commands.add(new AboutCommand());
     }
 
     public void onMessageReceivedEvent(MessageReceivedEvent event, String prefix) {
